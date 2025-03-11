@@ -48,7 +48,7 @@ class GossipGirlFinanceBot:
             " Until next time, keep your friends close and your investments closer."
         ]
         
-        # Add normal definitions
+        # normal definitions
         self.normal_definitions = {
 
             "mutual fund": "A mutual fund is a pool of money collected from multiple investors that is professionally managed and invested in various securities like stocks, bonds, and other assets. The fund manager makes investment decisions on behalf of all investors, who share in the profits, losses, and expenses proportionally.",
@@ -214,7 +214,6 @@ class GossipGirlFinanceBot:
     
     def add_gossip_girl_flair(self, response: str) -> str:
         """Add Gossip Girl style to a response"""
-        # Add intro and outro, but keep the main content intact
         intro = random.choice(self.gossip_intros)
         outro = random.choice(self.gossip_outros)
         final_response = f"{intro}{response}{outro}"
